@@ -1,0 +1,68 @@
+{
+    "name": "slidev-theme-miracle",
+    "description": "Academic slidev theme for USTC Miracle Lab 🎓",
+    "version": "0.1.0",
+    "author": {
+        "name": "锦恢",
+        "email": "zhelonghuang@qq.com",
+        "url": "https://github.com/LSTM-Kirigaya/"
+    },
+    "homepage": "https://kirigaya.cn/about",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LSTM-Kirigaya/slidev-theme-miracle"
+    },
+    "funding": "https://afdian.com/a/kirigaya",
+    "license": "MIT",
+    "keywords": [
+        "ustc miracle",
+        "slidev",
+        "slidev-theme",
+        "slidev-theme-miracle"
+    ],
+    "scripts": {
+        "build": "node prebuild.js && slidev build example.md",
+        "dev": "node prebuild.js && slidev example.md --open",
+        "export": "slidev export example.md",
+        "release": "release-it",
+        "setup": "npm install && npm run prepare",
+        "screenshot": "slidev export example.md --format png",
+        "prettier": "prettier --write **/*.{css,ts,vue}"
+    },
+    "prettier": "@alexanderdavide/prettier-config",
+    "dependencies": {
+        "@slidev/types": "^0.29.2",
+        "unocss": "^0.62.3"
+    },
+    "devDependencies": {
+        "@alexanderdavide/prettier-config": "^1.0.1",
+        "@commitlint/cli": "^16.2.1",
+        "@commitlint/config-conventional": "^16.2.1",
+        "@iconify-json/mdi": "^1.1.0",
+        "@release-it/conventional-changelog": "^4.2.0",
+        "@slidev/cli": "^51.0.0",
+        "husky": "^7.0.4",
+        "playwright-chromium": "^1.19.2",
+        "prettier": "^2.6.2",
+        "release-it": "^14.12.5"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "slidev": ">=0.47.0"
+    },
+    "slidev": {
+        "colorSchema": "both",
+        "highlighter": "shiki",
+        "defaults": {
+            "fonts": {
+                "sans": "Montserrat",
+                "serif": "Roboto Slab",
+                "mono": "Roboto Mono"
+            },
+            "themeConfig": {
+                "paginationX": "r",
+                "paginationY": "t"
+            }
+        }
+    }
+}
