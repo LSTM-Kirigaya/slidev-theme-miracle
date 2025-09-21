@@ -7,6 +7,8 @@
 
 一个适用于讲座、工作报告等场景的精美主题。灵感来自 Slidev 主题 [Academic](https://github.com/alexanderdavide/slidev-theme-academic)。
 
+![](./example-export/8.png)
+
 
 ## 安装
 
@@ -35,6 +37,7 @@ coverOrganization: Miracle Lab
 coverAuthor: [Kevin Zhou, 锦恢]
 coverAuthorUrl: [https://baike.baidu.com/item/%E5%91%A8%E5%B0%91%E5%8D%8E/61922413, https://kirigaya.cn/about]
 coverOccasion: 明德楼 C307
+coverMedia: https://picx.zhimg.com/80/v2-a9d1b704a4302f984012a03a67ffa61c_1440w.png
 ---
 
 # 科研实践讲演

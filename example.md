@@ -8,11 +8,12 @@ coverOrganization: Miracle Lab
 coverAuthor: [Kevin Zhou, 锦恢]
 coverAuthorUrl: [https://baike.baidu.com/item/%E5%91%A8%E5%B0%91%E5%8D%8E/61922413, https://kirigaya.cn/about]
 coverOccasion: 明德楼 C307
+coverMedia: https://picx.zhimg.com/80/v2-a9d1b704a4302f984012a03a67ffa61c_1440w.png
 ---
 
 # 科研实践讲演
 
-## AI Agent 基础技术讲解
+AI Agent 基础技术讲解
 
 
 ---
@@ -194,3 +195,12 @@ class: "text-center"
 
 <p class="absolute font-extralight right-14 transform rotate-8 top-4">Here!</p>
 
+---
+layout: end
+---
+
+# Thank you
+
+zhelonghuang@qq.com
+
+https://kirigaya.cn/about

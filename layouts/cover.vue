@@ -12,10 +12,18 @@
 
 
         <!-- Title / Subtitle -->
-        <div class="flex-1 flex flex-col gap-2 justify-center">
-            <slot />
-        </div>
+        <div class="flex-1 flex flex-row items-center justify-between gap-6">
+            <!-- 左边：标题内容 -->
+            <div class="w-1/2 flex flex-col gap-2">
+                <slot />
+            </div>
 
+            <!-- 右边：封面图 -->
+            <div v-if="coverMedia" class="w-1/2 flex justify-center">
+                <img :src="coverMedia"
+                    alt="Cover image" class="max-h-80 rounded-2xl shadow-lg object-contain" />
+            </div>
+        </div>
 
         <!-- meta 信息 -->
         <div class="flex flex-wrap gap-3">
@@ -56,7 +64,8 @@ const {
     coverDate = new Date().toLocaleDateString(),
     logoUrl = 'https://picx.zhimg.com/80/v2-32c67121f7b3b7395aec3ad20fb97713_1440w.png',
     topic = 'paper reading',
-    coverOrganization = 'Miracle Lab'
+    coverOrganization = 'Miracle Lab',
+    coverMedia = ''
 } = defineProps<{
     coverAuthor?: string | string[]
     coverAuthorUrl?: string | string[]
@@ -64,6 +73,7 @@ const {
     coverDate?: string | Date
     logoUrl?: string
     topic?: string
+    coverMedia?: string
     coverOrganization?: string
     coverOccasion?: string
 }>()
