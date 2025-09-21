@@ -2,16 +2,15 @@
 
 [![npm](https://img.shields.io/npm/v/slidev-theme-miracle?color=blue)](https://www.npmjs.com/package/slidev-theme-miracle) ![npm](https://img.shields.io/npm/dw/slidev-theme-miracle?color=blue) [![https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/)
 
-
-[中文版本](./README.zh.md)
-
-A beautiful theme for lecture, work report and so on. Inspired by Slidev Theme [Academic](https://github.com/alexanderdavide/slidev-theme-academic).
+[English Version](./README.md)
 
 
+一个适用于讲座、工作报告等场景的精美主题。灵感来自 Slidev 主题 [Academic](https://github.com/alexanderdavide/slidev-theme-academic)。
 
-## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+## 安装
+
+将以下 frontmatter 添加到你的 `slides.md` 中。启动 Slidev 后，它会提示你自动安装主题。
 
 ```
 ---
@@ -19,9 +18,9 @@ theme: miracle
 ---
 ```
 
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+了解更多关于 [如何使用主题](https://sli.dev/guide/theme-addon#use-theme)。
 
-## Layouts
+## 布局
 
 ### cover
 
@@ -164,10 +163,10 @@ print("A 的最大值 =", A.max())
 
 ![](./example-export/6.png)
 
-## Contributing
+## 贡献
 
 - `npm run setup`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+- `npm run dev` 启动 `example.md` 的主题预览
+- 编辑 `example.md` 和样式以查看更改
+- `npm run export` 生成预览 PDF
+- `npm run screenshot` 生成预览 PNG

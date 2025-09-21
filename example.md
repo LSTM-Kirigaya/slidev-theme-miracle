@@ -2,92 +2,165 @@
 theme: ./
 layout: cover
 class: text-white
-coverAuthor: [alexanderdavide, contributors]
-coverAuthorUrl: [https://www.alexeble.de, https://github.com/alexanderdavide/slidev-theme-academic/graphs/contributors]
-coverBackgroundUrl: /presentation.jpg
-coverBackgroundSource: unsplash
-coverBackgroundSourceUrl: https://images.unsplash.com/photo-1594122230689-45899d9e6f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-fonts:
-  local: Montserrat, Roboto Mono, Roboto Slab # local fonts are used for legal reasons for deployment to https://slidev-theme-academic.alexeble.de and only set up for the example project, remove this line for your project to automatically have fonts imported from Google
-hideInToc: true
-themeConfig:
-  paginationX: r
-  paginationY: t
-  paginationPagesDisabled: [1]
-title: slidev-theme-academic
-info: |
-  # slidev-theme-academic
-
-  Created and maintained by [Alexander Eble](https://www.alexeble.de).
-
-  - [GitHub](https://github.com/alexanderdavide/slidev-theme-academic)
-  - [npm](https://www.npmjs.com/package/slidev-theme-academic)
-
-  slidev-theme-academic is licensed under [MIT](https://github.com/alexanderdavide/slidev-theme-academic/blob/master/LICENSE).
-
-  <ul>
-    <li>
-      <a href="https://www.alexeble.de/impressum/" target="_blank">Legal information of this website</a>
-    </li>
-    <li>
-      <a href="https://www.alexeble.de/datenschutz/" target="_blank">Privacy policy of this website</a>
-    </li>
-  </ul>
+logoUrl: https://picx.zhimg.com/80/v2-32c67121f7b3b7395aec3ad20fb97713_1440w.png
+topic: 《影像与智能科研实践》课程讲义
+coverOrganization: Miracle Lab
+coverAuthor: [Kevin Zhou, 锦恢]
+coverAuthorUrl: [https://baike.baidu.com/item/%E5%91%A8%E5%B0%91%E5%8D%8E/61922413, https://kirigaya.cn/about]
+coverOccasion: 明德楼 C307
 ---
 
-# cover
+# 科研实践讲演
 
-## slidev-theme-academic
+## AI Agent 基础技术讲解
 
-<Pagination classNames="text-gray-300" />
 
 ---
 layout: table-of-contents
 hideInToc: false
 ---
 
-# table-of-contents
+# 讲演大纲
 
 ---
 layout: index
 indexEntries:
-  - { title: "Curated cover image for Slidev", uri: 4 }
-  - { title: "Curated cover image for Slidev", uri: 5 }
+  - { title: "image 布局", uri: 4 }
+  - { title: "image-text 布局", uri: 5 }
+  - { title: "GitHub", uri: "https://github.com/alexanderdavide/slidev-theme-academic" }
+  - { title: "npm", uri: "https://www.npmjs.com/package/slidev-theme-academic" }
+  - { title: "Slidev", uri: "https://sli.dev" }
 ---
 
-# index
+# index 布局
 
-`index` used as list of figures
+`index` 用作列表，`uri` 可以是 slidev 的页面 id，也可以是外部链接。
+
+
+```yaml
+layout: index
+indexEntries:
+  - { title: "image 布局", uri: 4 }
+  - { title: "image-text 布局", uri: 5 }
+  - { title: "GitHub", uri: "https://github.com/alexanderdavide/slidev-theme-academic" }
+  - { title: "npm", uri: "https://www.npmjs.com/package/slidev-theme-academic" }
+  - { title: "Slidev", uri: "https://sli.dev" }
+```
 
 ---
-layout: figure
-figureCaption: Curated cover image for Slidev
-figureFootnoteNumber: 1
-figureUrl: https://picsum.photos/1920/1080
+layout: image
+caption: Ender Magnolia Development
+footnodeNumber: 1
+media: https://pica.zhimg.com/80/v2-9df4eb94bfda11be1874fc6af61087ac_1440w.jpeg
 ---
 
-# figure
+# image 布局
 
 <Footnotes separator>
-  <Footnote :number=1><a href="https://picsum.photos/" rel="noreferrer" target="_blank">Picsum</a></Footnote>
+    <Footnote :number=1>https://www.endermagnolia.com/en/</Footnote>
 </Footnotes>
 
 ---
-layout: figure-side
-figureCaption: Curated cover image for Slidev
-figureFootnoteNumber: 1
-figureUrl: https://picsum.photos/1024/768
+layout: image-text
+caption: Curated cover image for Slidev
+footnodeNumber: 1
+media: https://pic1.zhimg.com/80/v2-ca2a555a68993804ed948795aa5ea4f2_1440w.webp
 ---
 
-# figure-side
+# image-text 布局
 
-- Ensures figures are displayed nicely out of the box
-- Allows placing the figure on the left or right
-- Features an optional figure caption
+- 确保图表默认展示美观
+- 支持将图表放置在左侧或右侧
+- 提供可选的图表标题功能
 
-<Footnotes separator>
-  <Footnote :number=1><a href="https://picsum.photos/" rel="noreferrer" target="_blank">Picsum</a></Footnote>
-</Footnotes>
+## frontmatter
+
+```yaml
+layout: image-text
+caption: Curated cover image for Slidev
+footnodeNumber: 1
+media: https://pic1.zhimg.com/80/v2-ca2a555a68993804ed948795aa5ea4f2_1440w.webp
+```
+
+---
+
+# 默认布局
+
+
+今天，我们学习如何使用 numpy 进行数组运算
+
+```python
+import numpy as np
+
+# 创建数组
+a = np.array([1, 2, 3, 4])
+b = np.array([10, 20, 30, 40])
+
+# 基本运算
+print("a + b =", a + b)       # 向量加法
+print("a - b =", a - b)       # 向量减法
+print("a * b =", a * b)       # 元素逐个相乘
+print("b / a =", b / a)       # 元素逐个相除
+
+# 广播机制
+c = np.array([[1], [2], [3]])   # 3x1 向量
+d = np.array([10, 20, 30])      # 1x3 向量
+print("Broadcasting:\n", c + d)
+
+# 矩阵运算
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[2, 0], [1, 2]])
+print("矩阵乘法:\n", A @ B)
+
+# 统计运算
+print("a 的和 =", a.sum())
+print("b 的平均值 =", b.mean())
+print("A 的最大值 =", A.max())
+```
+
+---
+
+# MCP 服务器
+
+```mermaid
+flowchart LR
+    subgraph Backend [Agent 后端服务]
+        A[POST 请求]
+        MCP_Client[MCP Client<br>内置Agent循环]
+
+        A -- 根据参数 --> MCP_Client
+    end
+
+    %% MCP Servers
+    subgraph MCP_Servers [MCP Server 层]
+        Prompt_Server[Prompt]
+        Tool_Server[Tool]
+        Resource_Server[Resource]
+    end
+
+    %% MCP协议通信
+    MCP_Client <-.->|MCP协议| Prompt_Server
+    MCP_Client <-.->|MCP协议| Tool_Server
+    MCP_Client <-.->|MCP协议| Resource_Server
+
+    %% 数据存储
+    DB[(数据库)] -- 通过Resource Server访问 --> Resource_Server
+    Tools[外部工具/API] -- 通过Tool Server调用 --> Tool_Server
+```
+
+---
+
+# Raden 变换
+
+二维逆傅里叶变换给出 $f(x,y)$：
+
+$f(x,y) = \iint_{-\infty}^{\infty} F(k_x,k_y)\, e^{j2\pi (k_x x + k_y y)}\, dk_x\,dk_y.$
+
+换成极坐标 $(k_x,k_y) = (\omega\cos\theta, \omega\sin\theta)$，有 $dk_x\,dk_y = |\omega|\,d\omega\,d\theta$。于是
+
+$\begin{aligned} f(x,y) &= \int_{0}^{\pi}\int_{-\infty}^{\infty} F(\omega\cos\theta,\omega\sin\theta)\, e^{j2\pi \omega (x\cos\theta + y\sin\theta)}\,|\omega|\,d\omega\,d\theta \\ &= \int_{0}^{\pi}\int_{-\infty}^{\infty} P_\theta(\omega)\, |\omega|\, e^{j2\pi \omega (x\cos\theta + y\sin\theta)}\, d\omega\, d\theta, \end{aligned}$
+
+其中我们用到了投影-切片定理将 $F$ 换成 $P_\theta$。
 
 ---
 layout: center
@@ -121,15 +194,3 @@ class: "text-center"
 
 <p class="absolute font-extralight right-14 transform rotate-8 top-4">Here!</p>
 
----
-layout: index
-indexEntries:
-  - { title: "GitHub", uri: "https://github.com/alexanderdavide/slidev-theme-academic" }
-  - { title: "npm", uri: "https://www.npmjs.com/package/slidev-theme-academic" }
-  - { title: "Slidev", uri: "https://sli.dev" }
-indexRedirectType: external
----
-
-# index
-
-`index` used as a list of references

@@ -51,7 +51,7 @@
         "slidev": ">=0.47.0"
     },
     "slidev": {
-        "colorSchema": "both",
+        "colorSchema": "dark",
         "highlighter": "shiki",
         "defaults": {
             "fonts": {
