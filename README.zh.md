@@ -12,6 +12,10 @@
 
 ## 安装
 
+```bash
+npm install -g @iconify-json/mdi
+```
+
 将以下 frontmatter 添加到你的 `slides.md` 中。启动 Slidev 后，它会提示你自动安装主题。
 
 ```

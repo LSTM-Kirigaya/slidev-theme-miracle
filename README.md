@@ -12,6 +12,10 @@ A beautiful theme for lecture, work report and so on. Inspired by Slidev Theme [
 
 ## Install
 
+```bash
+npm install -g @iconify-json/mdi
+```
+
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
 ```
