@@ -71,7 +71,7 @@ hideInToc: false
 layout: index
 indexEntries:
   - { title: "image 布局", uri: 4 }
-  - { title: "image-text 布局", uri: 5 }
+  - { title: "text-image 布局", uri: 5 }
   - { title: "GitHub", uri: "https://github.com/alexanderdavide/slidev-theme-academic" }
   - { title: "npm", uri: "https://www.npmjs.com/package/slidev-theme-academic" }
   - { title: "Slidev", uri: "https://sli.dev" }
@@ -99,17 +99,17 @@ media: https://pica.zhimg.com/80/v2-9df4eb94bfda11be1874fc6af61087ac_1440w.jpeg
 
 ![](./example-export/4.png)
 
-### image-text
+### text-image
 
 ```md
 ---
-layout: image-text
+layout: text-image
 caption: Curated cover image for Slidev
 footnodeNumber: 1
 media: https://pic1.zhimg.com/80/v2-ca2a555a68993804ed948795aa5ea4f2_1440w.webp
 ---
 
-# image-text 布局
+# text-image 布局
 
 - 确保图表默认展示美观
 - 支持将图表放置在左侧或右侧
@@ -118,7 +118,7 @@ media: https://pic1.zhimg.com/80/v2-ca2a555a68993804ed948795aa5ea4f2_1440w.webp
 ## frontmatter
 
 ```yaml
-layout: image-text
+layout: text-image
 caption: Curated cover image for Slidev
 footnodeNumber: 1
 media: https://pic1.zhimg.com/80/v2-ca2a555a68993804ed948795aa5ea4f2_1440w.webp
